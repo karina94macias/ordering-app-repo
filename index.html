@@ -1,0 +1,73 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="header-text-container">
+                    <h1>Jimmy’s Diner</h1>
+                    <h2>The best burgers and pizzas in town.</h2>
+                </div>
+            </header>
+            <main>
+                <div id="menu-items">
+                    <!-- Menu items here -->
+                </div>
+                <div id="order-section-one">
+                    <p class="order-section-title">Your order</p>
+                    <div id="items-ordered">
+                        <!-- Items ordered here -->
+                    </div>
+                </div>
+                <div id="order-section-two">
+                    <div id="total-price-container">
+                        <div class="total-label">Total price: </span></div>
+                        <div class="price" id="total"></div>
+                    </div>
+                    <button id="order-btn">Complete order</button>
+               </div>
+                <div id="acknowledgement-message">
+                    <!-- <p>Este mensaje es dinamico, asi que usar innerHTML para crearlo</p> -->
+                </div>
+            </main>
+        </div>
+        <div id="modal-payment">
+            <p>Enter card details</p>
+            <form id="payment-form">
+                <input 
+                    type="text"
+                    name="name"
+                    aria-label="name"
+                    placeholder="Enter your name"
+                    required
+            >
+                <input 
+                    type="number"
+                    name="card-number"
+                    aria-label="card-number"
+                    placeholder="Enter card number"
+                    minlength="14"
+                    maxlength="19"
+                    required
+                >
+                <input 
+                    type="number"
+                    name="cvv"
+                    aria-label="cvv"
+                    placeholder="Enter CVV"
+                    minlength="3"
+                    maxlength="4"
+                    required
+                >
+                <button type="submit" id="payment-btn">Pay</button>
+            </form> 
+        </div>
+        
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
