@@ -42,7 +42,10 @@ function handleAddItemClick(itemId){
     const itemAdded = menuArray.filter(function(item){
         return item.id == itemId
     })[0]
-    itemsAddedArray.push(itemAdded)  
+    itemsAddedArray.push({
+        name: itemAdded.name,
+        price: itemAdded.price
+    })  
     
     render()
 }
